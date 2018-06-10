@@ -31,9 +31,9 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 
 function canVote(age){
   if(age >= 18){
-    return "Of age.";
+    return true;
   }else{
-    return "Not of age.";
+    return false;
   }
 }
 
