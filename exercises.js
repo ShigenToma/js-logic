@@ -156,9 +156,9 @@ console.log(isEqual(5, 4));
 */
 function notEqual(first, second){
   if(first !== second){
-    return "Opposites do attract."
+    return "Opposites do attract.";
   }else{
-    return "Cause it's like you're my mirror."
+    return "Cause it's like you're my mirror.";
   }
 }
 console.log(notEqual(5, 4));
@@ -175,8 +175,16 @@ console.log(notEqual(5, 5));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+function spareChange(money){
+  if(money >= 100){
+    return true;
+  }else{
+    return false;
+  }
+}
 
-
+console.log("spareChange", spareChange(101));
+console.log("spareChange", spareChange(99));
 
 /*
  * #9
@@ -191,8 +199,15 @@ console.log(notEqual(5, 5));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function dirty30(one, two, three){
+  if(one + two + three >= 30){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("dirty30", dirty30(10, 20, 20));
+console.log("dirty30", dirty30(10, 9, 8));
 
 /*
  * #10
@@ -205,7 +220,15 @@ console.log(notEqual(5, 5));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function evenStevens(num){
+  if(num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("evenStevens", evenStevens(4));
+console.log("evenStevens", evenStevens(5));
 
 
 
@@ -221,6 +244,15 @@ console.log(notEqual(5, 5));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
+  }
+}
+console.log("daClub", daClub(24, 25));
+console.log("daClub", daClub(18, 23));
 
 
 /*
